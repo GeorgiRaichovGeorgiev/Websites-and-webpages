@@ -1,0 +1,285 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, main, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+body {
+  background-color: skyblue;
+  line-height: 21px;
+}
+
+#wrapper {
+  width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+  background-color: #FFF;
+}
+
+/* main-header */
+#main-header {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+#main-header p {
+  padding-left: 210px;
+  padding-right: 210px;
+  color: #606060;
+}
+
+#main-nav {
+  margin-bottom: 55px;
+}
+
+#main-nav ul {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #FFF;
+  background-color: #000;
+}
+
+#main-nav ul li + li {
+  margin-left: 70px;
+}
+
+#main-nav ul li {
+  display: inline-block;
+}
+
+#main-nav ul li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #7c7c7c;
+  font-weight: bold;
+}
+
+#main-nav ul li #current-page, #main-nav ul li a:hover {
+  color: #2980b9;
+}
+
+#main-nav ul #wsd {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 28px;
+  vertical-align: middle;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+hr {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+/* content */
+#content {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+article {
+  width: 492px;
+  margin-bottom: 55px;
+  display: inline-block;
+}
+
+.odd {
+  margin-right: 40px;
+}
+
+.article-content {
+  width: 440px;
+  text-align: left;
+  float: left;
+}
+
+.article-content h2 {
+  margin-bottom: 15px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.article-content p {
+  margin-bottom: 10px;
+  color: #606060;
+}
+
+.article-content a {
+  color: #606060;
+}
+
+.article-content a:hover {
+  color: #2980b9;
+}
+
+.article-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
+  float: left;
+}
+
+#user {
+  background-image: url(../img/services/user.png);
+}
+
+#bubble {
+  background-image: url(../img/services/bubble.png);
+}
+
+#headphones {
+  background-image: url(../img/services/headphones.png);
+}
+
+#pencil {
+  background-image: url(../img/services/pencil.png);
+}
+
+#message {
+  height: 24px;
+  background-image: url(../img/services/message.png);
+}
+
+#sunny {
+  background-image: url(../img/services/sunny.png);
+}
+
+#musical-note {
+  background-image: url(../img/services/musical-note.png);
+}
+
+#padlock {
+  background-image: url(../img/services/padlock.png);
+}
+
+/* main-footer */
+#main-footer {
+  padding: 15px 150px;
+  color: #777;
+  background-color: #000;
+  line-height: 16px;
+  overflow-y: hidden;
+}
+
+#main-footer li {
+  display: inline-block;
+}
+
+#main-footer li + li {
+  margin-left: 10px;
+}
+
+#main-footer a {
+  width: 22px;
+  height: 18px;
+  display: inline-block;
+}
+
+#main-footer a:hover {
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* IE 5-7 */
+  filter: alpha(opacity=50);
+  /* Netscape */
+  -moz-opacity: 0.5;
+  /* Safari 1.x */
+  -khtml-opacity: 0.5;
+  /* Good browsers */
+  opacity: 0.5;
+}
+
+#main-footer p {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: right;
+}
+
+#main-footer p:first-child {
+  margin-bottom: 5px;
+}
+
+#twitter {
+  background-image: url(../img/social-media/twitter.png);
+}
+
+#facebook {
+  background-image: url(../img/social-media/facebook.png);
+}
+
+#google-plus {
+  background-image: url(../img/social-media/google-plus.png);
+}
+
+#pinterest {
+  background-image: url(../img/social-media/pinterest.png);
+}
+
+#rss {
+  background-image: url(../img/social-media/rss.png);
+}
+
+#social-media {
+  margin-top: 8px;
+  float: left;
+}
+
+#company-name-and-rights {
+  float: right;
+}
