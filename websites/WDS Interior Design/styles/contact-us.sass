@@ -1,6 +1,8 @@
 @import pieces/reset
 @import pieces/main-header
 
+#main-nav #wsd + li
+	display: none
 #content
 	width: 960px
 	margin-left: auto
@@ -13,8 +15,6 @@ section
 	float: left
 	p, ul
 		margin-bottom: 15px
-		li + li
-			margin-top: 2.5px
 #message
 	margin-right: 40px
 h2
@@ -70,3 +70,81 @@ textarea
    opacity: 1
 
 @import pieces/main-footer
+
+/* 1300px */
+@media (max-width: 1300px)
+	#wrapper
+		width: 960px
+	#main-nav ul li + li
+		margin-left: 50px
+	#main-header p, h1
+		padding-left: 60px
+		padding-right: 60px
+	section
+		width: 400px
+	#message
+		margin-left: 60px
+	iframe
+		width: 400px
+		height: 179px
+	
+/* 1000px */
+@media (max-width: 1000px)
+	#wrapper
+		width: 660px
+	/* main navigation */
+	@import pieces/main-header-1000
+	#content
+		width: auto
+		text-align: center
+	section
+		width: 540px
+		display: inline-block
+		float: none
+	#message
+		margin-right: 0
+		margin-left: 0
+		margin-bottom: 50px
+		border-bottom: 1px solid #888
+		padding-bottom: 50px
+	section > ul
+		margin-bottom: 30px
+	iframe
+		width: 540px
+		height: 235px
+	/* footer */
+	#main-footer
+		padding-left: 35px
+		padding-right: 35px
+	
+/* 700px */
+@media (max-width: 700px)
+	#wrapper
+		width: 400px
+	/* main navigation */
+	@import pieces/main-header-700
+	section
+		width: 340px
+	iframe
+		width: 340px
+		height: 148px
+	/* footer */
+	@import pieces/main-footer-700
+
+/* 430px */
+@media (min-width: 300px) and (max-width: 430px)
+	#wrapper
+		width: 100%
+	@import pieces/main-header-430
+	#content
+		padding-left: 30px
+		padding-right: 30px
+	section
+		width: 100%
+	#button
+		width: 220px
+	iframe
+		width: 100%
+		height: auto
+	#main-footer p:first-child
+		margin-bottom: 10px

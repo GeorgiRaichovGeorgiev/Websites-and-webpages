@@ -1,6 +1,8 @@
 @import pieces/reset
 @import pieces/main-header
 
+#main-nav #wsd + li
+	display: none
 /* content */
 #content
 	margin-bottom: 10px
@@ -25,8 +27,8 @@ article
 		display: inline-block
 		& + li
 			margin-left: 15px
-#fifth
-	margin-left: 0
+	&:nth-child(4n + 5)
+		margin-left: 0
 img
 	margin-bottom: 20px
 h2
@@ -58,3 +60,75 @@ h2
 	background-image: url(../img/social-media/pinterest-person.png)
 
 @import pieces/main-footer
+
+/* 1300px */
+@media (max-width: 1300px)
+	#wrapper
+		width: 960px
+	#main-nav ul li + li
+		margin-left: 50px
+	h1, #main-header > p
+		padding-left: 60px
+		padding-right: 60px
+	#articles-wrapper
+		width: 840px
+		margin-left: auto
+		margin-right: auto
+	article
+		width: 195px
+		img
+			width: 195px
+			height: 195px
+
+/* 1000px */
+@media (max-width: 1000px)
+	#wrapper
+		width: 660px
+	/* main navigation */
+	@import pieces/main-header-1000
+	#articles-wrapper
+		width: 540px
+	article
+		width: 156px
+		display: inline-block
+		float: none
+		& + article
+			margin-left: 30px
+		img
+			width: 156px
+			height: 156px
+		&:nth-child(4n + 5)
+			margin-left: 30px
+		&:nth-child(3n + 4)
+			margin-left: 0
+	/* footer */
+	#main-footer
+		padding-left: 35px
+		padding-right: 35px
+
+/* 700px */
+@media (max-width: 700px)
+	#wrapper
+		width: 400px
+	/* main navigation */
+	@import pieces/main-header-700
+	#articles-wrapper
+		width: 250px
+		article
+			width: 250px
+			margin-bottom: 75px
+			margin-left: 0
+			float: none
+		img
+			width: 250px
+			height: 250px
+	/* footer */
+	@import pieces/main-footer-700
+
+/* 430px */
+@media (min-width: 300px) and (max-width: 430px)
+	#wrapper
+		width: 100%
+	@import pieces/main-header-430
+	#main-footer p:first-child
+		margin-bottom: 10px
