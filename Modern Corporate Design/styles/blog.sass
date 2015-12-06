@@ -1,0 +1,110 @@
+@import pieces/reset
+@import pieces/main-header
+
+#main-nav #wsd + li
+	display: none
+#articles-wrapper
+	width: 960px
+	margin-left: auto
+	margin-right: auto
+	padding-bottom: 50px
+	overflow: hidden
+article
+	width: 460px
+	margin-bottom: 60px
+	float: left
+	a
+		color: #606060
+		&:hover
+			color: #2980b9
+	&:nth-child(odd)
+		margin-right: 40px
+img
+	margin-bottom: 15px
+h2
+	margin-bottom: 15px
+	font-size: 19px
+	font-weight: bold
+p
+	margin-bottom: 10px
+	color: #606060
+
+@import pieces/main-footer
+
+/* 1300px */
+@media (max-width: 1300px)
+	#wrapper
+		width: 960px
+	#main-nav ul li + li
+		margin-left: 50px
+	#main-header p, h1
+		padding-left: 60px
+		padding-right: 60px
+	#articles-wrapper
+		width: 840px
+	article
+		width: 400px
+		img
+			width: 400px
+			height: 209px
+
+/* 1000px */
+@media (max-width: 1000px)
+	#wrapper
+		width: 660px
+	/* main navigation */
+	@import pieces/main-header-1000
+	#articles-wrapper
+		width: 540px
+		overflow: hidden
+	article
+		width: 250px
+		img
+			width: 250px
+			height: 130px
+	/* footer */
+	#main-footer
+		padding-left: 35px
+		padding-right: 35px
+
+/* 700px */
+@media (max-width: 700px)
+	#wrapper
+		width: 400px
+	/* main navigation */
+	@import pieces/main-header-700
+	#articles-wrapper
+		width: 340px
+	article
+		width: 340px
+		margin-bottom: 70px
+		text-align: center
+		&:nth-child(odd)
+			margin-right: 0
+		img
+			width: 340px
+			height: 177px
+		h2
+			line-height: 25px
+	/* footer */
+	@import pieces/main-footer-700
+
+/* 430px */
+@media (min-width: 300px) and (max-width: 430px)
+	#wrapper
+		width: 100%
+	@import pieces/main-header-430
+	#articles-wrapper
+		width: auto
+		padding-left: 30px
+		padding-right: 30px
+		text-align: center
+	article
+		width: 100%
+		display: inline-block
+		float: none
+		img
+			width: 100%
+			height: auto
+	#main-footer p:first-child
+		margin-bottom: 10px

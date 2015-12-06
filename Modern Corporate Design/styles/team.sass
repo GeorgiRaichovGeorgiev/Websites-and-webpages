@@ -1,0 +1,134 @@
+@import pieces/reset
+@import pieces/main-header
+
+#main-nav #wsd + li
+	display: none
+/* content */
+#content
+	margin-bottom: 10px
+#articles-wrapper
+	width: 960px
+	margin-left: auto
+	margin-right: auto
+	text-align: center
+	overflow: hidden
+article
+	width: 225px
+	margin-bottom: 65px
+	float: left
+	& + &
+		margin-left: 20px
+	p
+		height: 90px
+		margin-bottom: 25px
+		color: #757575
+		font-size: 14px
+	li
+		display: inline-block
+		& + li
+			margin-left: 15px
+	&:nth-child(4n + 5)
+		margin-left: 0
+img
+	margin-bottom: 20px
+h2
+	margin-bottom: 20px
+	font-size: 18px
+	font-weight: bold
+.social-media
+	width: 17px
+	height: 14px
+	display: inline-block
+	&:hover
+		/* IE 8 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"
+		/* IE 5-7 */
+		filter: alpha(opacity=50)
+		/* Netscape */
+		-moz-opacity: 0.5
+		/* Safari 1.x */
+		-khtml-opacity: 0.5
+		/* Good browsers */
+		opacity: 0.5
+.twitter
+	background-image: url(../img/social-media/twitter-person.png)
+.facebook
+	background-image: url(../img/social-media/facebook-person.png)
+.google-plus
+	background-image: url(../img/social-media/google-plus-person.png)
+.pinterest
+	background-image: url(../img/social-media/pinterest-person.png)
+
+@import pieces/main-footer
+
+/* 1300px */
+@media (max-width: 1300px)
+	#wrapper
+		width: 960px
+	#main-nav ul li + li
+		margin-left: 50px
+	h1, #main-header > p
+		padding-left: 60px
+		padding-right: 60px
+	#articles-wrapper
+		width: 840px
+		margin-left: auto
+		margin-right: auto
+	article
+		width: 195px
+		img
+			width: 195px
+			height: 195px
+
+/* 1000px */
+@media (max-width: 1000px)
+	#wrapper
+		width: 660px
+	/* main navigation */
+	@import pieces/main-header-1000
+	#articles-wrapper
+		width: 540px
+	article
+		width: 156px
+		display: inline-block
+		float: none
+		& + article
+			margin-left: 30px
+		img
+			width: 156px
+			height: 156px
+		&:nth-child(4n + 5)
+			margin-left: 30px
+		&:nth-child(3n + 4)
+			margin-left: 0
+	/* footer */
+	#main-footer
+		padding-left: 35px
+		padding-right: 35px
+
+/* 700px */
+@media (max-width: 700px)
+	#wrapper
+		width: 400px
+	/* main navigation */
+	@import pieces/main-header-700
+	#articles-wrapper
+		width: 250px
+		article
+			width: 250px
+			margin-bottom: 75px
+			margin-left: 0
+			float: none
+		img
+			width: 250px
+			height: 250px
+	/* footer */
+	@import pieces/main-footer-700
+
+/* 430px */
+@media (min-width: 300px) and (max-width: 430px)
+	#wrapper
+		width: 100%
+	@import pieces/main-header-430
+	#main-footer p:first-child
+		margin-bottom: 10px
