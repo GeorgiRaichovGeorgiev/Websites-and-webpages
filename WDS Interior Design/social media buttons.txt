@@ -1,6 +1,0 @@
-facebook - https://developers.facebook.com/docs/plugins/like-button
-google plus - https://developers.google.com/+/web/+1button/
-linkedin - https://developer.linkedin.com/plugins/share (скрипта, майче, се поставя направо на мястото, където искам да се изобрази бутона)
-stumbleupon - http://www.stumbleupon.com/dt/badges/create
-pinterest - https://developers.pinterest.com/docs/widgets/pin-it/
-tumblr - https://www.tumblr.com/buttons
