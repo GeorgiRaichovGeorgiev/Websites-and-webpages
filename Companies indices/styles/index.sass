@@ -1,0 +1,147 @@
+@import reset.sass
+
+body
+	font-family: sans-serif
+::selection
+	background-color: skyblue
+::-moz-selection
+	background-color: skyblue
+h1
+	padding: 15px 0
+	text-align: center
+	font-size: 30px
+	color: #FF0000
+	font-weight: bold
+	background-color: #000
+	color: #FFF
+	line-height: 35px
+nav
+	padding-top: 50px
+	border-bottom: 8px solid #000
+	background-color: #c9c9c9
+	text-align: center
+	h2
+		margin-bottom: 20px
+		font-size: 30px
+		font-weight: bold
+	ul
+		padding-left: 20px
+		padding-right: 20px
+		display: inline-block
+		overflow: hidden
+		li
+			padding-bottom: 20px
+			display: inline-block
+			list-style-type: none
+			& + li
+				margin-left: 9px
+.letter
+	padding: 8px 10px
+	border-radius: 50px
+	-webkit-border-radius: 50px
+	-moz-border-radius: 50px
+	background-color: #444
+	color: #FFF
+	text-decoration: none
+	font-weight: bold
+	display: block
+	transition: background-color 0.2s, color 0.2s
+	-webkit-transition: background-color 0.2s, color 0.2s
+	-moz-transition: background-color 0.2s, color 0.2s
+	-o-transition: background-color 0.2s, color 0.2s
+	&:hover
+		background-color: #FFF
+		color: #333
+
+#region
+	li
+		a
+			padding: 20px 10px
+			text-decoration: none
+			font-size: 19px
+			font-weight: bold
+			color: #000
+			display: block
+			border-radius: 10px
+			-webkit-border-radius: 10px
+			-moz-border-radius: 10px
+			border: 2px solid #000 
+			transition: background-color 0.4s, color 0.4s
+			-webkit-transition: background-color 0.4s, color 0.4s
+			-moz-transition: background-color 0.4s, color 0.4s
+			-o-transition: background-color 0.4s, color 0.4s
+		& + li
+			margin-left: 20px
+#north-america
+	background-color: #00CC00
+	&:hover
+		background-color: #FFF
+		color: #00CC00
+		border-color: #999
+#south-america
+	background-color: #008000
+	&:hover
+		background-color: #FFF
+		color: #008000
+		border-color: #999
+#europe
+	background-color: #f20000
+	&:hover
+		background-color: #FFF
+		color: #f20000
+		border-color: #999
+#asia
+	background-color: #F33E01
+	&:hover
+		background-color: #FFF
+		color: #F33E01
+		border-color: #999
+#middle-east
+	background-color: #00a9ff
+	&:hover
+		background-color: #FFF
+		color: #0089ce
+		border-color: #999
+#africa
+	background-color: #FED52E
+	&:hover
+		background-color: #FFF
+		color: #b2ac01
+		border-color: #999
+#australia-and-south-pacific
+	background-color: #C04080
+	&:hover
+		background-color: #FFF
+		color: #C04080
+		border-color: #999
+
+#industry
+	padding-bottom: 50px
+	ul
+		overflow: visible
+		li
+			a
+				padding: 15px 10px
+				box-shadow: 6px 8px 13px #333
+				border: 2px solid #FFF
+				font-size: 19px
+				text-decoration: none
+				font-weight: bold
+				color: #FFF
+				background-color: #444
+				display: block
+				&:hover
+					background-color: #FFF
+					border-color: #444
+					color: #333
+					box-shadow: none
+					transition: all 0.2s
+					-webkit-transition: all 0.2s
+					-moz-transition: all 0.2s
+					-o-transition: all 0.2s
+			& + li
+				margin-left: 20px
+
+// @media (max-width: 1100px)
+// 	body
+// 		width: 1100px
