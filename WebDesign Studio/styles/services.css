@@ -56,7 +56,7 @@ strong {
 }
 
 body {
-  background-color: skyblue;
+  background-color: #80B3D5;
   line-height: 21px;
 }
 
@@ -146,10 +146,6 @@ article {
   width: 492px;
   margin-bottom: 55px;
   display: inline-block;
-}
-
-.odd {
-  margin-right: 40px;
 }
 
 .article-content {
