@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Professional Business Template
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		//- link(rel="stylesheet", type="text/css", href="styles/style.css")
+	body
+		header
+			include jade/logo-and-nav
+			.main-part
+				h2 Contact Us
+				h3 Thank you for stopping by. How may we help you!
+		main
+			form
+				label Name:
+					input(type="text", name="name")
+				label Email Address:
+					input(type="email", name="email")
+				label Subject
+					input(type="text", name="subject")
+				label Message
+					textarea
+			aside
+				section
+					h3 Company Info
+					address 1234 Street name<br>City - 12345<br>Country
+				section
+					h3 Contact Details
+					a(href="#") contact@mail.com<br>
+					| Website: www.Business.com<br>
+					| Phone: 123-456-7890
+				section
+					h3 Connect With Us
+					a(href="#")
+						img(src="img/Layer 44(1).png", alt="LinkedIn", width="35", height="38")
+					a(href="#")
+						img(src="img/Layer 45(1).png", alt="Twitter", width="35", height="38")
+					a(href="#")
+						img(src="img/Layer 46(1).png", alt="Facebook", width="35", height="38")
+		include jade/footer
+		//- script(type="text/javascript", src="js/jquery-1.11.3.min.js")
+		//- script(type="text/javascript", src="js/")
