@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Professional Business Template
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		//- link(rel="stylesheet", type="text/css", href="styles/style.css")
+	body
+		include jade/header
+		main
+			ul.page-navigation
+				li: a(href="#") Home
+			section.contacts
+				h1 Contacts
+				iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47036.26789892685!2d-73.95356076224166!3d40.67598578956198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1454149852531", width="1120", height="300", frameborder="0", style="border:0", allowfullscreen)
+				section.contact-info
+					h2 Contact info
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque tempora ducimus doloremque error eius laboriosam rem quibusdam dicta esse, id itaque placeat provident debitis vero a voluptatibus mollitia voluptas modi? Itaque eaque, dolor ipsam aperiam.
+					strong The Company Name Inc.
+					address 9870 St Vincent Place, Glasgow, DC 45 Fr 45.<br>
+							| Telephone: <a href="tel:18006036035">+1 800 603 6035</a><br>
+							| FAX: +1 800 889 9898<br>
+							| E-mail: <a href="mailto:mail@demolink.org">mail@demolink.org</a>
+				section.contact-form
+					h2 Contact form
+					input(type="text", name="name", placeholder="Your name")
+					input(type="email", name="email", placeholder="Your email")
+					input(type="tel", name="tel", placeholder="Phone")
+					input(type="text", name="website", placeholder="Website")
+					textarea(placeholder="Your comment")
+					input(type="submit", value="Send")
+		include jade/footer
+		//- script(type="text/javascript", src="js/jquery-1.11.3.min.js")
+		//- script(type="text/javascript", src="js/")
