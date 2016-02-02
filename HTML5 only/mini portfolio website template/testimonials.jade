@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Professional Business Template
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		//- link(rel="stylesheet", type="text/css", href="styles/style.css")
+	//- background-image: url(img/background.jpg);
+	body
+		include parts/header
+		main
+			h2 What customers say:
+			.testimonials-slider
+				a(href="#"): img(src="img/arrow-left2.png", alt="arrow left")
+				.testimonials
+					//- background-image: img/arrow-down2.png
+					span.arrow-down
+					blockquote
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi facilis qui rerum minima officia facere. Architecto ipsum harum doloribus veritatis illo aliquam fugiat, iste sequi, dolore, aliquid alias. Esse quia cumque ex sapiente aliquam in alias, deleniti iusto saepe placeat.
+						footer
+							img(src="img/customer-photo.png", alt="photo of the customer", width="33", height="39")
+							p<cite><strong>Markus Jefferson</strong></cite><br>CEO, Company Name
+					//- other testimonials(blockquotes) here ...
+				a(href="#"): img(src="img/arrow-right2.png", alt="arrow right")
+		include parts/footer
+		//- script(type="text/javascript", src="js/jquery-1.11.3.min.js")
+		//- script(type="text/javascript", src="js/")

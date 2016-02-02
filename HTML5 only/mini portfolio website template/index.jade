@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Professional Business Template
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		//- link(rel="stylesheet", type="text/css", href="styles/style.css")
+	//- background-image: url(img/background.jpg);
+	body
+		include parts/header
+		main
+			.images-navigation
+				.categories
+					a(href="#") Logos
+					a(href="#") Websites
+					a(href="#") Package
+					a(href="#") Corporate ID
+				.position
+					span Image 14 of 49
+					a(href="#"): img(src="img/Play.png", alt="start the slider")
+					a(href="#"): img(src="img/Prev.png", alt="check out the previous image")
+					a(href="#"): img(src="img/Next.png", alt="check out the next image")
+			.images
+				.other
+					a(href="#"): img(src="img/leaf.png", alt="leaf", width="179", height="116")
+					a(href="#"): img(src="img/bangle.png", alt="bangle", width="179", height="116")
+					a(href="#"): img(src="img/star.png", alt="star", width="179", height="116")
+					.prev-next
+						a(href="#"): img(src="img/Prev2.png", alt="check out the previous image")
+						a(href="#"): img(src="img/Next2.png", alt="check out the next image")
+				figure
+					img(src="img/clover.png", alt="clover", width="572", height="366")
+					figcaption
+						h2 Econsectetuer Adipiscing
+						p Elit nunc ullamcorper blandit urna sed facilisis accumsan nisi.
+						a(href="#") Details
+						//- padding-left: ...; background-image: Layer 9 copy 6.png;    or    ::before{...}
+						a(href="#") Full Size
+		include parts/footer
+		//- script(type="text/javascript", src="js/jquery-1.11.3.min.js")
+		//- script(type="text/javascript", src="js/")

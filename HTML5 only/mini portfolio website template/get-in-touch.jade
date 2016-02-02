@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Professional Business Template
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		//- link(rel="stylesheet", type="text/css", href="styles/style.css")
+	//- background-image: url(img/background.jpg);
+	body
+		include parts/header
+		main
+			section.order
+				h2 Place an order
+				p If you'd like to place an order please fill the form. We will answer you as soon as possible.
+				form
+					label Name*
+						input(type="text", name="name", placeholder="Your name")
+					label Email*
+						input(type="email", name="email", placeholder="Your email")
+					label Service
+						select
+							option(value="web-development") Web development
+							option(value="web-design") Web design
+					label Budget
+						select
+							option(value="0-1500") $ 0 - 1,500
+							option(value="1500-3000") $ 1,500 - 3,000
+							option(value="3000-5000") $ 3,000 - 5,000
+							option(value="5000-10000") $ 5,000 - 10,000
+							option(value="10000-20000") $ 10,000 - 20,000
+					label Project info
+						textarea(placeholder="Your message")
+					input(type="submit", value="SUBMIT REQUEST")
+			section.get-in-touch
+				h2 Get in touch
+				address
+					| 7 office, Second floor, 19, Phuket road,<br>
+					| Phuket town, Thailand<br>
+					span.phone Phone: <a href="tel:+668009991234">+66 800 999 1234</a>
+					| Fax: +66 800 999 1235
+				.social-network
+					//- ::before { facebook-icon.png; }
+					a(href="#") We are in Facebook
+					//- ::before { twitter-icon.png; }
+					a(href="#") Follow us on Twitter
+		include parts/footer
+		//- script(type="text/javascript", src="js/jquery-1.11.3.min.js")
+		//- script(type="text/javascript", src="js/")
