@@ -147,7 +147,7 @@ html(lang="en")
 							.decorative-line
 							footer
 								//- ::before { time-icon.png; }
-								time March 2013
+								time(datetime="2013-03") March 2013
 								//- ::before { people-icon.png; }
 								p.company Lorem Studio, NY
 								//- ::before { tool-icon.png; }
@@ -327,27 +327,27 @@ html(lang="en")
 					.address
 						//- background-image: house.png;
 						span.house
-						h3 Address
+						p.title Address
 						p Awesome Street 234, NY
 					.mail
 						//- background-image: speech-bubble.png;
 						span.speech-bubble
-						h3 Mail
+						p.title Mail
 						a(href="mailto:articamail@mail.com") articamail@mail.com
 					.phone
 						//- background-image: phone.png;
 						span.phone
-						h3 Phone
+						p.title Phone
 						a(href="tel:000123-456-789") (000)123-456-789
 				form
 					input(type="text", name="name", placeholder="Enter Name")
-					input(type="mail", name="mail", placeholder="Enter Mail")
+					input(type="email", name="email", placeholder="Enter Mail")
 					input(type="text", name="subject", placeholder="Enter Subject")
 					textarea(placeholder="Enter Message")
 					input(type="submit", value="Send Message")
 		footer
 			img(src="img/artica-white-small.png", alt="Artica", width="122", height="30")
-			small &at; Copyright 2013 Artica. All Rights Reserved.
+			small &copy; Copyright 2013 Artica. All Rights Reserved.
 
 		//- script(type="text/javascript", src="js/jquery-1.11.3.min.js")
 		//- script(type="text/javascript", src="js/")
