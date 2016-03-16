@@ -1,0 +1,394 @@
+header
+	position: relative
+header > .discount, form > .discount
+	color:#fff
+	font-weight:700
+	text-transform:uppercase
+	-webkit-animation:blur 1.75s ease-out infinite
+	-moz-animation:blur 1.75s ease-out infinite
+	-o-animation:blur 1.75s ease-out infinite
+	animation:blur 1.75s ease-out infinite
+	position: absolute
+header > .discount
+	&:first-child
+		top: 250px
+		left: 20px
+		font-size: 50px
+		-webkit-transform: rotate(20deg)
+		-moz-transform: rotate(20deg)
+		-ms-transform: rotate(20deg)
+		transform: rotate(20deg)
+		text-shadow:0px 50px 0px #FF0000, 0px 3px 7px #FF0000
+	&:nth-child(2)
+		top: 250px
+		right: 20px
+		font-size: 50px
+		-webkit-transform: rotate(-20deg)
+		-moz-transform: rotate(-20deg)
+		-ms-transform: rotate(-20deg)
+		transform: rotate(-20deg)
+		text-shadow:0px 50px 0px #FF0000, 0px 3px 7px #FF0000
+.kitchen-larger
+	display: block
+	width: 100%
+	height: auto
+.kitchen-smaller, .kitchen-smallest, .kitchen-smallest2
+	display: none
+.logo-nav-and-tel
+	width: 100%
+	padding: 5px 10px 5px 10px
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	position: absolute
+	top: 40px
+	-webkit-border-radius: 10px
+	-moz-border-radius: 10px
+	border-radius: 10px
+	background-color: rgba(255, 255, 255, 0.8)
+.wrapper
+	height: 95px
+	border-top: 3px solid #000
+	border-bottom: 3px solid #000
+	position: relative
+	h1, nav, .tel-wrapper
+		display: inline-block
+	h1
+		width: 24.7%
+		position: relative
+		top: -46px
+		text-align: left
+		a
+			display: inline-block
+		img
+			display: block
+	.tel-wrapper
+		width: 24.7%
+		position: relative
+		top: -100px
+		text-align: right
+	.tel
+		text-decoration: none
+		color: #6a2525
+		font-weight: bold
+		font-size: 35px
+		letter-spacing: 2px
+		transition: color 0.2s
+		-webkit-transition: color 0.2s
+		-moz-transition: color 0.2s
+		-o-transition: color 0.2s
+		&:hover
+			color: #000
+nav
+	width: 49.7%
+	position: relative
+	bottom: 60px
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	padding-left: 3%
+	padding-right: 3%
+	text-align: center
+	li
+		display: inline-block
+		font-size: 35px
+		line-height: 42px
+		color: #6a2525
+		letter-spacing: 2px
+		a
+			text-decoration: none
+			color: #6a2525
+@-webkit-keyframes blur
+  from
+      text-shadow:0px 0px 10px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 10px 100px #7B96B8
+@-moz-keyframes blur
+  from
+      text-shadow:0px 0px 10px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 10px 100px #7B96B8
+@-o-keyframes blur
+  from
+      text-shadow:0px 0px 10px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 10px 100px #7B96B8
+@keyframes blur
+  from
+      text-shadow:0px 0px 10px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 10px 100px #7B96B8
+
+@media (max-width: 1430px)
+	header > .discount
+		&:first-child, &:nth-child(2)
+			font-size: 45px
+@media (max-width: 1380px)
+	header > .discount
+		&:first-child, &:nth-child(2)
+			font-size: 40px
+@media (max-width: 1330px)
+	header > .discount
+		&:first-child, &:nth-child(2)
+			top: 225px
+			font-size: 35px
+@media (max-width: 1215px)
+	header > .discount
+		&:first-child, &:nth-child(2)
+			top: 225px
+			font-size: 30px
+			text-shadow:0px 35px 0px #FF0000, 0px 3px 7px #FF0000
+@media (max-width: 1130px)
+	header > .discount
+		&:first-child, &:nth-child(2)
+			top: 200px
+			font-size: 35px
+			text-shadow:0px 35px 0px #FF0000, 0px 3px 7px #FF0000
+		&:first-child
+			-webkit-transform: rotate(10deg)
+			-moz-transform: rotate(10deg)
+			-ms-transform: rotate(10deg)
+			transform: rotate(10deg)
+		&:nth-child(2)
+			-webkit-transform: rotate(-10deg)
+			-moz-transform: rotate(-10deg)
+			-ms-transform: rotate(-10deg)
+			transform: rotate(-10deg)
+@media (max-width: 1015px)
+	header > .discount
+		&:first-child, &:nth-child(2)
+			top: 155px
+			font-size: 32px
+		&:first-child
+			-webkit-transform: none
+			-moz-transform: none
+			-ms-transform: none
+			transform: none
+		&:nth-child(2)
+			-webkit-transform: none
+			-moz-transform: none
+			-ms-transform: none
+			transform: none
+@media (max-width: 1150px)
+	.wrapper
+		height: 82px
+		h1
+			top: -41px
+			img
+				width: 250px
+				height: auto
+		.tel-wrapper
+			width: 21.7%
+			top: -90px
+			right: 5px
+			a
+				font-size: 30px
+	nav
+		width: 52.7%
+		bottom: 54px
+		li
+			font-size: 30px
+			line-height: 37px
+@media (max-width: 1030px)
+	.logo-nav-and-tel
+		top: 35px
+	.wrapper
+		height: 77px
+		h1
+			width: 30%
+			top: -39px
+			img
+				width: 235px
+		nav
+			width: 69%
+			padding-left: 6%
+			padding-right: 0
+			text-align: left
+			bottom: 50px
+			li
+				font-size: 28px
+				line-height: 35px
+		.tel-wrapper
+			position: absolute
+			top: 5px
+			right: 15px
+			a
+				font-size: 26px
+@media (max-width: 800px)
+	header > .discount
+		&:first-child, &:nth-child(2)
+			top: 65px
+			font-size: 30px
+		&:first-child
+			-webkit-transform: rotate(-20deg)
+			-moz-transform: rotate(-20deg)
+			-ms-transform: rotate(-20deg)
+			transform: rotate(-20deg)
+		&:nth-child(2)
+			-webkit-transform: rotate(20deg)
+			-moz-transform: rotate(20deg)
+			-ms-transform: rotate(20deg)
+			transform: rotate(20deg)
+	.logo-nav-and-tel
+		top: auto
+		bottom: -80px
+		background-color: #FFF
+		-webkit-border-radius: 0
+		-moz-border-radius: 0
+		border-radius: 0
+	.wrapper
+		height: auto
+		padding-top: 15px
+		padding-bottom: 15px
+		h1
+			width: auto
+			left: -10px
+			-webkit-border-top-right-radius: 10px
+			-moz-border-top-right-radius: 10px
+			border-top-right-radius: 10px
+			background-color: #FFF
+			position: absolute
+			top: -112px
+			a
+				padding: 8px 10px
+				display: block
+				img
+					width: 180px
+		nav
+			width: 100%
+			padding-left: 0
+			padding-right: 0
+			bottom: 0
+			text-align: center
+		.tel-wrapper
+			width: auto
+			padding: 5px 10px
+			background-color: #FFF
+			-webkit-border-top-left-radius: 10px
+			-moz-border-top-left-radius: 10px
+			border-top-left-radius: 10px
+			top: -43px
+			right: -10px
+			a
+				font-size: 26px
+	.kitchen-larger
+		display: none
+	.kitchen-smaller
+		display: block
+		width: 100%
+		height: auto
+	main
+		margin-top: 80px
+@media (max-width: 720px)
+	header > .discount
+		&:first-child, &:nth-child(2)
+			top: 40px
+			font-size: 22px
+			text-shadow:0px 25px 0px #FF0000, 0px 3px 7px #FF0000
+@media (max-width: 650px)
+	.wrapper
+		h1
+			top: -97px
+			a img
+				width: 150px
+		.tel-wrapper
+			top: -40px
+			a
+				font-size: 23px
+@media (max-width: 540px)
+	header > .discount
+		&:first-child
+			width: 100%
+			left: 0
+			text-align: center
+			top: 75px
+			font-size: 21px
+			text-shadow:0px 23px 0px #FF0000, 0px 3px 7px #FF0000
+			-webkit-transform: none
+			-moz-transform: none
+			-ms-transform: none
+			transform: none
+		&:nth-child(2)
+			display: none
+	.logo-nav-and-tel
+		bottom: -76px
+	.wrapper
+		h1
+			top: -98px
+			left: 50%
+			margin-left: -85px
+			-webkit-border-top-left-radius: 10px
+			-moz-border-top-left-radius: 10px
+			border-top-left-radius: 10px
+			background-color: rgba(255, 255, 255, 0.7)
+		nav ul li
+			font-size: 23px
+			line-height: 30px
+			&+li
+				padding-left: 23px
+			span
+				display: none
+		.tel-wrapper
+			top: -205px
+			-webkit-border-bottom-left-radius: 10px
+			-moz-border-bottom-left-radius: 10px
+			border-bottom-left-radius: 10px
+			a
+				font-size: 23px
+	.kitchen-smaller
+		display: none
+	.kitchen-smallest
+		display: block
+		width: 100%
+		height: 230px
+	main
+		margin-top: 76px
+@media (max-width: 466px)
+	header > .discount
+		&:first-child
+			top: 50px
+@media (max-width: 462px)
+	.wrapper
+		padding-top: 5px
+		padding-bottom: 5px
+		h1
+			margin-left: -67px
+			top: -90px
+			a img
+				width: 134px
+		nav ul li
+			line-height: 40px
+			&:last-child
+				margin-top: 12px
+		.tel-wrapper
+			top: -190px
+@media (max-width: 288px)
+	header > .discount
+		&:first-child
+			text-align: center
+			top: 32px
+			font-size: 18px
+			text-shadow: 0px 23px 0px #FF0000, 0px 3px 7px #FF0000
+			-webkit-transform: none
+			-moz-transform: none
+			-ms-transform: none
+			transform: none
+		&:nth-child(2)
+			display: none
+	.wrapper
+		nav ul li:nth-child(3)
+			margin-top: 12px
+		.tel-wrapper
+			top: -155px

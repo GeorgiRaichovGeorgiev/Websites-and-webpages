@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title About Us
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", type="text/css", href="styles/about.css")
+	body
+		include jade/header
+		main
+			.about-us-wrapper
+				h1 <span class="border-bottom">About Us</span>
+				.content
+					p Regal Home Renovations is a custom renovation and home maintenance firm that delivers remarkable craftsmanship, outstanding project management and second-to-none customer experience while being eco-friendly by adhering to green building principles.
+					p We cater our services to each one of our customers by creating unique and custom plans for your specific project. With over a decade of experience, our team provides architectural and interior design services, home maintenance services, along with pressure washing services. Because of our varied knowledge, you can trust our company with all of your home needs!
+					.owner
+						p Kriss Simeonov
+						img(src="img/table-kitchen.png", alt="Table in a kitchen")
+				aside
+					h2 Testimonies
+					blockquote
+						p Needed my kitchen redon, and RHR did an amazing job!
+						cite Garrett E.
+						.arrow-down
+					blockquote
+						p RHR quickly fixed my leaky roof and gave me <strong>50%</strong> too!
+						cite Bob R.
+						.arrow-down
+					blockquote
+						p The staff at Regal Home Renovations were extremley friendly and professional.
+						cite Kevin S.
+						.arrow-down
+		include jade/footer

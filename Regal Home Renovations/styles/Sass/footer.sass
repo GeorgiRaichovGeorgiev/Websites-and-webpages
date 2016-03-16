@@ -1,0 +1,190 @@
+footer
+	background-color: #9c7240
+	background-image: url(../img/crown.png)
+	background-repeat: no-repeat
+	background-position: 1.4% 42%
+	border-top: 2px solid #000
+	overflow: hidden
+	position: relative
+	height: 90px
+	li
+		display: inline-block
+		font-size: 25px
+		a
+			text-decoration: none
+			color: #000
+small
+	font-size: 18px
+	position: absolute
+	bottom: 10px
+	right: 15px
+.social-network, .site-navigation, small
+	display: inline-block
+	vertical-align: middle
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+.social-network
+	position: absolute
+	top: 50%
+	margin-top: -17.5px
+	left: 100px
+	a:hover > img
+		opacity: 0.7
+	a + a
+		margin-left: 20px
+.site-navigation
+	position: absolute
+	top: 50%
+	margin-top: -12.5px
+	margin-left: -184px
+	left: 50%
+.cards, .cards-small
+	position: absolute
+	top: -5px
+	right: 15px
+.cards-small
+	display: none
+
+@media (max-width: 1380px)
+	small
+		width: 285px
+		text-align: right
+		line-height: 21px
+		right: 20px
+		bottom: 14px
+	.cards
+		display: none
+	.cards-small
+		display: inline-block
+		top: -2px
+		right: 15px
+		position: absolute
+@media (max-width: 1180px)
+	footer
+		height: 145px
+		background-position: 15px 15px
+	.social-network
+		top: 30px
+		left: 50%
+		margin-left: -37.5px
+		a + a
+			margin-left: 10px
+	.site-navigation
+		top: 77px
+	small
+		width: 100%
+		bottom: 15px
+		text-align: center
+		right: 0
+	.cards
+		right: 2px
+		display: none
+	.cards-small
+		top: 10px
+		display: inline-block
+@media (max-width: 1000px)
+	.cards
+		display: none
+	.cards-small
+		display: inline-block
+		top: 7px
+@media (max-width: 850px)
+	.cards
+		display: none
+	.cards-medium
+		display: inline-block
+		height: 53px
+		top: 5px
+		right: 15px
+		left: auto
+@media (max-width: 650px)
+	footer
+		height: 205px
+		-webkit-background-size: 50px
+		-moz-background-size: 50px
+		-o-background-size: 50px
+		background-size: 50px
+	.social-network
+		top: 83px
+	.site-navigation
+		top: 135px
+	.cards-small
+		top: 3px
+		right: 4px
+@media (max-width: 490px)
+	footer
+		height: 365px
+		background-position: 50% 60px
+		li
+			font-size: 23px
+			line-height: 37px
+			& + li
+				margin-left: 15px
+			&:last-child
+				margin-top: 12px
+				margin-left: 0
+			a
+				color: #f2f2f2
+			span
+				display: none
+	.social-network
+		top: 125px
+	.site-navigation
+		width: 100%
+		margin-left: 0
+		padding: 10px 18%
+		top: 175px
+		left: 0
+		text-align: center
+		border-top: 7px solid #FFF
+		border-bottom: 2px solid #FFF
+		-webkit-border-radius: 50%
+		-moz-border-radius: 50%
+		border-radius: 50%
+	small
+		padding-right: 6%
+		padding-left: 6%
+		line-height: 23px
+	.cards-small
+		right: auto
+		left: 5px
+@media (max-width: 435px)
+	small
+		padding-left: 6%
+		padding-right: 6%
+	.cards-medium
+		display: none
+	.cards-small
+		width: 80px
+		height: auto
+		display: inline-block
+		position: absolute
+		right: 5px
+		top: 5px
+@media (max-width: 395px)
+	footer
+		li:nth-child(3)
+			margin-left: 0
+		li:last-child
+			margin-left: 15px
+	.site-navigation
+		padding-left: 20%
+		padding-right: 20%
+@media (max-width: 332px)
+	.site-navigation
+		padding-right: 14%
+		padding-left: 14%
+@media (max-width: 316px)
+	footer
+		height: 380px
+	small
+		padding-left: 8%
+		padding-right: 8%
+@media (max-width: 285px)
+	footer
+		height: 420px
+		li:nth-child(3)
+			margin-top: 12px
+		li:last-child
+			margin-right: 15px

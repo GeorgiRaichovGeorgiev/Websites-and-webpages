@@ -1,0 +1,57 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Home
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", type="text/css", href="styles/home.css")
+		<!--[if lt IE 10]>
+		| <style>
+		|		header .discount, form .discount {
+		|			color: #F00004
+		|		}
+		|	</style>
+		<![endif]-->
+	body
+		include Jade/header
+		main
+			.content-wrapper
+				h1 <span class="border-bottom">Home</span>
+				section.our-mission
+					h2 Our Mission
+					section
+						h3 Whole Home Renovations
+						p Regal Home Renovations is a London, England based company specializing in areas such as whole home remodeling to simple handyman work. Our team is dedicated to helping you realize your vision for your next project.
+					section
+						h3 Redefining the Renovation Experience
+						p When you select Regal Home Renovations to renovate your home, you are choosing a company that strives for excellence and that aways puts our customers first. With more than decade's worth of experience in transforming spaces, our goal is to redefine the renovation process by providing beautiful craftsmanship, excellent project management, and outstanding customer service.
+					section
+						h3 Let's Talk About Your Project Today
+						p To begin the process, whether it is handyman service or a complete home renovation, just fill out the form and know that your next project is just a click away!
+					p We look forward to working with you!
+					p.owner Kriss Simeonov
+					a(href="tel:07730463693", class="tel") 07730463693
+				aside
+					img(class="form-dec-img", src="img/form-dec-img.png", alt="Some description", width="100%", height="")
+					.content
+						h3 Request a Quote
+						form(method="post", action="message.php")
+							.input-wrapper
+								label(for="name") Name <span class="required">(required)</span>
+								input(type="text", id="name", name="name", required)
+							.input-wrapper
+								label(for="email") Email <span class="required">(required)</span>
+								input(type="email", id="email", name="email", required)
+							.input-wrapper
+								label(for="tel") Phone Number <span class="required">(required)</span>
+								input(type="tel", id="tel", name="tel", required)
+							.input-wrapper
+								label(for="address") Address
+								input(type="text", id="address", name="address")
+							.input-wrapper
+								label(for="message") Message <span class="required">(required)</span>
+								textarea(id="message", name="message", required)
+							.send-button-wrapper
+								input(class="send" type="submit", name="submit", value="Send")
+							p.discount 50% off first job!
+		include Jade/footer

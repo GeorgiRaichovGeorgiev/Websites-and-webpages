@@ -1,0 +1,51 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Services
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", type="text/css", href="styles/services.css")
+	body
+		include Jade/header
+		main
+			div.rates-wrapper
+				h1 <span class="border-bottom">Services</span>
+				h2 Residential and Commercial
+				section.rates
+					.info
+						h2 Our Rates
+						p <span class="bold">Handyman Services</span> <span class="dash-and-space">- </span> &pound;75 ph
+						p <span class="discount">50%</span> off your first project.
+						p After that receive <span class="discount">30%</span> off for the entire year !!!!!
+						div.services
+							p <span class="bold">Electrical Services</span> <span class="dash-and-space">- </span> &pound;70 ph
+							p <span class="bold">Plumbing Services</span> <span class="dash-and-space">- </span> &pound;70 ph
+							p <span class="bold">Painting Services</span> <span class="dash-and-space">- </span> &pound;70 ph
+							p <span class="bold">Carpentry Services</span> <span class="dash-and-space">- </span> &pound;70 ph
+							p <span class="bold">Carpet Cleaning Services</span> <span class="dash-and-space">- </span> &pound;70 ph
+							p <span class="bold">Gardening Services</span> <span class="dash-and-space">- </span> &pound;70 ph
+							p <span class="discount">20%</span> discount for 4 hr.
+							p <span class="discount">10%</span> additional discount after 4 hr.
+						p Discount are NOT available for projects AFTER HOURS.
+						p <span class="bold">Emergency Calls</span> <span class="dash-and-space">- </span> &pound;105 ph
+					.photos
+						.first-two
+							img(src="img/stairways.png", alt="stairways")
+							img(src="img/path.png", alt="path")
+						img(src="img/house.png", alt="house")
+			section.before-and-after
+				.before
+					h2 <span class="border-bottom">Before</span>
+					.column-one
+						img(src="img/stairways-before.png", alt="Stairway before")
+					.column-two
+						img(src="img/fireplace-before.png", alt="Stairway after")
+				.after
+					h2 <span class="border-bottom">After</span>
+					.column-one
+						img(src="img/stairways-1.png", alt="Stairways after - closer look")
+					.column-two
+						img(src="img/fireplace-after.png", alt="Fireplace after")
+		include Jade/footer
+		//- script(type="text/javascript", src="js/jquery-1.11.3.min.js")
+		//- script(type="text/javascript", src="js/")

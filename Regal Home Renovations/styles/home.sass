@@ -1,0 +1,382 @@
+@import reset.sass
+
+body
+	border: 2px solid #000
+	font-family: sans-serif
+
+/* header */
+@import Sass/header
+nav li:first-child > a
+	font-weight: bold
+	color: #333
+
+/* main */
+main
+	padding: 2.5%
+	background-color: #a8a7a4
+	overflow: hidden
+	h1
+		font-size: 60px
+		text-align: center
+		font-style: italic
+		font-family: serif
+		font-weight: bold
+		.border-bottom
+			border-bottom: 3px solid #000
+.content-wrapper
+	padding: 1.5% 3%
+	-webkit-border-radius: 10px
+	-moz-border-radius: 10px
+	border-radius: 10px
+	border: 2px solid #000
+	background: #D8D8D7
+	background: -webkit-linear-gradient(#dfdfde, #cbcbca)
+	background: -moz-linear-gradient(#dfdfde, #cbcbca)
+	background: -o-linear-gradient(#dfdfde, #cbcbca)
+	background: linear-gradient(#dfdfde, #cbcbca)
+	overflow: hidden
+.owner
+	margin-top: 45px
+.our-mission > .tel
+	margin-left: 30%
+	padding: 5px 10px
+	-webkit-border-radius: 9px
+	-moz-border-radius: 9px
+	border-radius: 9px
+	color: #851313
+	font-size: 45px
+	line-height: 40px
+	letter-spacing: 3px
+	background-color: #F2F2F2
+	border: 2px solid #000
+	text-decoration: none
+	display: inline-block
+	transition: background-color 0.2s, color 0.2s
+	-webkit-transition: background-color 0.2s, color 0.2s
+	-moz-transition: background-color 0.2s, color 0.2s
+	-o-transition: background-color 0.2s, color 0.2s
+	&:hover
+		background-color: #851313
+		color: #F2F2F2
+.our-mission
+	width: 70%
+	margin-top: 60px
+	float: left
+	p
+		font-size: 25px
+		line-height: 30px
+	h2
+		margin-bottom: 85px
+		padding-left: 10%
+		font-size: 42px
+		font-weight: bold
+		font-style: italic
+	h3
+		font-weight: bold
+		font-size: 28px
+	section
+		margin-bottom: 70px
+aside
+	width: 25%
+	margin-top: 60px
+	margin-left: 5%
+	float: left
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+.content
+	padding: 5% 10%
+	border: 1px solid #000
+	border-top: none
+form
+	text-align: center
+	position: relative
+	.discount
+		width: 112px
+		right: -25px
+		bottom: -8px
+		text-align:center
+		font-size:24px
+		-webkit-transform: rotate(-10deg)
+		-moz-transform: rotate(-10deg)
+		-ms-transform: rotate(-10deg)
+		transform: rotate(-10deg)
+		text-shadow:0px 3px 0px #FF0000, 0px 3px 7px #FF0000
+.input-wrapper > input
+	width: 100%
+	margin: 5.5% 0 1.5%
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	border: 0
+	border-bottom: 2px solid #FFF
+	outline: none
+	background: none
+	color: #000
+	font-size: 20px
+	text-align: center
+input:-webkit-autofill
+    -webkit-box-shadow: 0 0 0px 1000px #D1D1D0 inset
+.form-dec-img
+	display: block
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	border-top: 1px solid #000
+	border-right: 1px solid #000
+	border-bottom: 0
+	border-left: 1px solid #000
+.content h3
+	margin-bottom: 40px
+	text-align: center
+	font-size: 30px
+	color: #26241d
+.input-wrapper
+	margin-bottom: 30px
+label
+	color: #0000AA
+	font-size: 23px
+	text-align: left
+	display: block
+textarea
+	width: 100%
+	height: 175px
+	max-width: 100%
+	margin-top: 5%
+	padding-left: 2.5%
+	padding-bottom: 1.5%
+	padding-top: 2.5%
+	font-size: 20px
+	font-weight: bold
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	outline: 0
+.send-button-wrapper
+	text-align: left
+.send
+	padding: 3.5% 11%
+	border: 0px
+	font-size: 25px
+	-webkit-border-top-left-radius: 20% 50%
+	-moz-border-top-left-radius: 20% 50%
+	border-top-left-radius: 20% 50%
+	-webkit-border-top-right-radius: 20% 50%
+	-moz-border-top-right-radius: 20% 50%
+	border-top-right-radius: 20% 50%
+	-webkit-border-bottom-right-radius: 20% 50%
+	-moz-border-bottom-right-radius: 20% 50%
+	border-bottom-right-radius: 20% 50%
+	-webkit-border-bottom-left-radius: 20% 50%
+	-moz-border-bottom-left-radius: 20% 50%
+	border-bottom-left-radius: 20% 50%
+	outline: 0
+	background-color: #F5F5F5
+	border: 2px solid #000
+	transition: background-color 0.2s, color 0.2s
+	-webkit-transition: background-color 0.2s, color 0.2s
+	-moz-transition: background-color 0.2s, color 0.2s
+	-o-transition: background-color 0.2s, color 0.2s
+	&:hover
+		cursor: pointer
+		background-color: #000
+		color: #F5F5F5
+.required
+	color: #af1313
+	display: inline-block
+	font-size: 20px
+
+/* footer */
+@import Sass/footer
+
+/* Media Queries */
+@media (max-width: 1500px)
+	form p
+		right: -30px
+		font-size: 23px
+@media (max-width: 1350px)
+	.content-wrapper
+		padding-left: 3%
+	.our-mission
+		width: 65%
+	aside
+		width: 30%
+	textarea
+		height: 200px
+@media (max-width: 1175px)
+	.content-wrapper
+		padding-left: 4%
+		padding-right: 0
+		padding-bottom: 0
+	.our-mission
+		width: 60%
+		padding-bottom: 10%
+	.our-mission > .tel
+		margin-left: 0
+		margin-top: 25px
+	.owner
+		margin-top: 25px
+	aside
+		width: 35%
+		.content
+			border-right: 0
+			border-bottom: 0
+			padding-bottom: 12%
+			position: relative
+		form
+			position: static
+	form
+		.discount
+			font-size: 25px
+			right: 10px
+			bottom: 15px
+	.form-dec-img
+		border-right: 0
+@media (max-width: 1030px)
+	.content-wrapper h1
+		font-size: 55px	
+	.our-mission
+		h2
+			font-size: 37px
+		h3
+			font-size: 24px
+		p
+		    font-size: 23px
+		    line-height: 28px
+	aside
+		h3
+			font-size: 25px
+	form .discount
+		font-size: 24px
+	label
+		font-size: 22px
+@media (max-width: 980px)
+	main
+		padding: 5%
+	.content-wrapper
+		padding: 2.5% 6% 6%
+	.our-mission
+		width: auto
+		padding-bottom: 0
+		text-align: center
+		float: none
+		h2
+			padding-left: 0
+		h3
+			margin-bottom: 10px
+		section > p
+			text-align: left
+		.tel
+			font-size: 35px
+	aside
+		width: 500px
+		margin: 50px auto 0
+		float: none
+		.content
+			padding: 15px 75px 35px
+			border-right: 1px solid #000
+			border-bottom: 1px solid #000
+	form .discount
+		width: 150px
+		font-size: 27px
+		right: 20px
+		bottom: 30px
+	.form-dec-img
+		border-right: 1px solid #000
+	.input-wrapper
+		margin-bottom: 50px
+@media (max-width: 700px)
+	.content-wrapper
+		padding: 6% 10% 15%
+		h1
+			font-size: 40px
+			span
+				border-bottom-width: 2px
+	.our-mission
+		margin-top: 40px
+		h2
+			font-size: 27px
+			margin-bottom: 40px
+		h3
+			font-size: 22px
+			line-height: 27px
+		section > p
+			text-align: left
+			font-size: 21px
+			line-height: 28px
+		p
+			font-size: 21px
+			line-height: 28px
+		.tel
+			padding: 3px 8px
+			font-size: 30px
+			line-height: 35px
+	aside
+		width: auto
+		margin-top: 40px
+		.content
+			padding: 10%
+			h3
+				font-size: 25px
+	.input-wrapper
+		margin-bottom: 40px
+	label
+		font-size: 21px
+	.send
+		font-size: 23px
+		padding: 4% 10%
+@media (max-width: 550px)
+	form .discount
+		width: 125px
+		font-size: 26px
+		right: 5px
+		bottom: 15px
+@media (max-width: 480px)
+	main
+		padding: 0
+	.content-wrapper
+		padding-top: 50px
+		padding-bottom: 80px
+		border: 0
+		border-radius: 0
+		h1
+			font-size: 35px
+	.our-mission
+		margin-top: 65px
+		h2
+			margin-bottom: 30px
+			font-size: 26px
+		h3
+			font-size: 21px
+			line-height: 26px
+		section > p
+			font-size: 20px
+			line-height: 25px
+			text-align: center
+		p
+			font-size: 20px
+			line-height: 25px
+		.tel
+			font-size: 25px
+			line-height: 30px
+	aside
+		.content
+			padding: 0 5%
+			border: 0
+			h3
+				margin-top: 10%
+				font-size: 23px
+				line-height: 29px
+	label
+		line-height: 25px
+	form .discount
+		width: 150px
+		font-size: 27px
+		right: -15px
+		bottom: -25px
+@media (max-width: 380px)
+	form .discount
+		width: 125px
+		font-size: 25px
+		right: -25px
+		bottom: -25px

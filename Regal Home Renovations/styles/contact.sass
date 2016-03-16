@@ -1,0 +1,347 @@
+@import reset.sass
+
+body
+	border: 2px solid #000
+	font-family: sans-serif
+
+/* header */
+@import Sass/header
+nav li:nth-child(3) > a
+	font-weight: bold
+	color: #333
+
+/* main */
+main
+	padding: 2.5%
+	font-size: 30px
+	line-height: 40px
+	background-color: #a8a7a4
+	position: relative
+.contacts
+	margin-bottom: 25px
+	padding: 1.5% 1.5% 5%
+	-webkit-border-radius: 10px
+	-moz-border-radius: 10px
+	border-radius: 10px
+	border: 2px solid #000
+	background: #D8D8D7
+	background: -webkit-linear-gradient(#dfdfde, #cbcbca)
+	background: -moz-linear-gradient(#dfdfde, #cbcbca)
+	background: -o-linear-gradient(#dfdfde, #cbcbca)
+	background: linear-gradient(#dfdfde, #cbcbca)
+	position: relative
+	h1
+		margin-bottom: 120px
+		text-align: center
+		font-size: 60px
+		font-style: italic
+		font-family: serif
+		font-weight: bold
+.contacts img
+	width: 45%
+	position: absolute
+	bottom: 160px
+	right: 8%
+	border: 2px solid #000
+.border-bottom
+	border-bottom: 3px solid #000
+h2
+	margin-bottom: 20px
+	color: #661212
+.email, .phone-number
+	margin-bottom: 65px
+	text-decoration: underline
+	color: #0000FF
+	word-break: break-all
+	display: inline-block
+.emergency-calls
+	width: 500px
+	margin-top: 65px
+a
+	text-decoration: none
+	color: #000
+.contact-form
+	padding: 1.5% 1.5% 5%
+	-webkit-border-radius: 10px
+	-moz-border-radius: 10px
+	border-radius: 10px
+	background: #D8D8D7
+	background: -webkit-linear-gradient(#dfdfde, #cbcbca)
+	background: -moz-linear-gradient(#dfdfde, #cbcbca)
+	background: -o-linear-gradient(#dfdfde, #cbcbca)
+	background: linear-gradient(#dfdfde, #cbcbca)
+	border: 2px solid #000
+	form
+		overflow: hidden
+		label
+			margin-bottom: 3%
+			color: #0000AA
+			display: block
+		.column-one input
+			padding: 0.5% 1% 1%
+			border: 0
+			border-bottom: 2px solid #FFF
+			outline: none
+			background: none
+			color: #000
+			font-size: 25px
+			display: block
+		textarea
+			width: 80%
+			height: 200px
+			max-width: 80%
+			margin-top: 3%
+			padding: 10px 14px
+			outline: 0
+			font-size: 25px
+			display: block
+			-webkit-box-sizing: border-box
+			-moz-box-sizing: border-box
+			box-sizing: border-box
+		.send-button-wrapper
+			margin-top: 25px
+			-webkit-box-sizing: border-box
+			-moz-box-sizing: border-box
+			box-sizing: border-box
+			input
+				width: 220px
+				padding: 12px 6px
+				-webkit-border-radius: 5px
+				-moz-border-radius: 5px
+				border-radius: 5px
+				background-color: #F5F5F5
+				border: 2px solid #000
+				color: #000
+				font-size: 25px
+				cursor: pointer
+				display: block
+				transition: background-color 0.2s, color 0.2s
+				-webkit-transition: background-color 0.2s, color 0.2s
+				-moz-transition: background-color 0.2s, color 0.2s
+				-o-transition: background-color 0.2s, color 0.2s
+				&:hover
+					background-color: #000
+					color: #F5F5F5
+		input ~ label
+			margin-top: 25px
+	.column-one
+		width: 50%
+		border-right: 2px solid #000
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		float: left
+	.column-two
+		width: 50%
+		padding-left: 2%
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		float: left
+.contact-form > p
+	margin-bottom: 30px
+	padding-bottom: 10px
+	border-bottom: 2px solid #000
+.required
+	color: #af1313
+	display: inline-block
+	font-size: 25px
+input:-webkit-autofill
+	-webkit-box-shadow: 0 0 0px 1000px #D5D5D4 inset
+
+/* footer */
+@import Sass/footer
+
+@media (max-width: 1350px)
+	.contacts, .contact-form
+		padding: 1.5% 3% 5%
+@media (max-width: 1175px)
+	main
+		font-size: 27px
+		line-height: 32px
+	.contacts
+		padding: 1.5% 4% 5%
+		img
+			bottom: 170px
+	h2
+		font-size: 32px
+		line-height: 37px
+	.contact-form
+		padding: 1.5% 4% 5%
+		form
+			input, .send-button-wrapper input, textarea
+				font-size: 24px
+@media (max-width: 1030px)
+	main
+		font-size: 25px
+		line-height: 30px
+	.contacts
+		h1
+			font-size: 55px
+			line-height: 55px
+		h2
+			margin-bottom: 10px
+		img
+			bottom: 140px
+		form
+			.column-one input, .send-button-wrapper input, textarea
+				font-size: 23px
+@media (max-width: 980px)
+	main
+		padding: 5%
+	.contacts
+		padding: 2.5% 6% 6%
+		h1
+			margin-bottom: 60px
+		h2
+			font-size: 30px
+			line-height: 35px
+		img
+			width: 40%
+			right: 5%
+			bottom: 120px
+			border-width: 1px
+	.emergency-calls
+		margin-top: 40px
+	.email, .phone-number
+		margin-bottom: 40px
+	.contact-form
+		padding: 2.5% 6% 6%
+		form
+			.send-button-wrapper
+				margin-top: 25px
+				input
+					width: 180px
+					padding: 11px 5px
+					font-size: 22px
+		label
+			margin-bottom: 3%
+		form
+			.column-one input
+				width: 90%
+				font-size: 22px
+				padding: 1% 0 0.5% 3%
+			.column-one textarea
+				width: 90%
+				font-size: 22px
+		.column-two
+			padding-left: 4%
+	.required
+		font-size: 21px
+		line-height: 26px
+	textarea#message
+		width: 95%
+		max-width: 95%
+		height: 220px
+@media (max-width: 700px)
+	main
+		font-size: 23px
+		line-height: 28px
+	.contacts
+		padding: 6% 10%
+		text-align: center
+		h1
+			margin-bottom: 40px
+			font-size: 40px
+			span
+				border-bottom-width: 2px
+		h2
+			font-size: 27px
+			line-height: 27px
+		img
+			display: none
+	.emergency-calls
+		width: auto
+	.contact-form
+		padding: 6% 10%
+		p
+			padding-bottom: 20px
+		.column-one
+			width: auto
+			float: none
+			border: none
+		.column-two
+			width: auto
+			float: none
+			padding-left: 0
+			margin-top: 25px
+		form
+			label
+				margin-bottom: 15px
+			.column-one input
+				width: 100%
+				-webkit-box-sizing: border-box
+				-moz-box-sizing: border-box
+				box-sizing: border-box
+			input ~ label
+				margin-top: 25px
+	textarea#message
+		width: 100%
+		max-width: 100%
+	.required
+		font-size: 21px
+		line-height: 26px
+@media (max-width: 545px)
+	main
+		font-size: 21px
+		line-height: 26px
+@media (max-width: 500px)
+	main
+		font-size: 20px
+		line-height: 25px
+@media (max-width: 480px)
+	main
+		padding: 0
+	.contacts
+		margin-bottom: 0
+		padding-top: 50px
+		padding-bottom: 40px
+		border-width: 0
+		border-bottom: 5px solid #000
+		-webkit-border-radius: 0
+		-moz-border-radius: 0
+		border-radius: 0
+		h1
+			margin-bottom: 65px
+			font-size: 35px
+			line-height: 35px
+		h2
+			margin-bottom: 0
+			font-size: 26px
+			line-height: 26px
+	.contact-form
+		padding-top: 40px
+		padding-bottom: 55px
+		border: 0
+		-webkit-border-radius: 0
+		-moz-border-radius: 0
+		border-radius: 0
+		p
+			text-align: center
+@media (max-width: 410px)
+	main
+		font-size: 19px
+		line-height: 24px
+@media (max-width: 385px)
+	main
+		font-size: 18px
+		line-height: 23px
+@media (max-width: 365px)
+	.contacts
+		padding-left: 5%
+		padding-right: 5%
+	.contact-form
+		padding-left: 7%
+		padding-right: 7%
+		form
+			.column-one input
+				font-size: 21px
+			.send-button-wrapper
+				margin-top: 25px
+				input
+					font-size: 21px
+	textarea#message
+		font-size: 21px
+	.required
+		font-size: 20px
+		line-height: 25px

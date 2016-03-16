@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Contact Us
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", type="text/css", href="styles/contact.css")
+	body
+		include Jade/header
+		main
+			.contacts
+				h1 <span class="border-bottom">Contact Us</span>
+				h2 E-mail
+				a(class="email" href="mailto:info@regalhomerenovations.co.uk") info@regalhomerenovations.co.uk
+				h2 Phone Number
+				a(class="phone-number" href="tel:07730463693") 07730463693
+				h2 Hours of Operation
+				p.hours-of-operation Mon-Sat/ 9am-6pm <br> Sunday/ Closed
+				p.emergency-calls We accept any Emergency calls after hours.
+				img(src="img/shower.png", alt="shower")
+			.contact-form
+				p Please let us know how we can help with your home renovation or home maintanace project by filling out the information below, or give us a call to schedule a free consultation.
+				form(method="post", action="message.php")
+					//- p The star sign (<span class="required">*</span>) means that the field is required.
+					.column-one
+						//- <span class="required">*</span>
+						label(for="name") Name <span class="required">(required)</span>
+						input(type="text", id="name", name="name", required)
+						label(for="email") Email <span class="required">(required)</span>
+						input(type="email", id="email", name="email", required)
+						label(for="tel") Phone Number <span class="required">(required)</span>
+						input(type="tel", id="tel", name="tel", required)
+						label(for="address") Address
+						input(type="text", id="address", name="address")
+					.column-two
+						label(for="message") Message <span class="required">(required)</span>
+						textarea(id="message", name="message", required)
+						.send-button-wrapper
+							input(class="send" type="submit", name="submit", value="Send")
+
+		include Jade/footer
+		//- script(type="text/javascript", src="js/jquery-1.11.3.min.js")
+		//- script(type="text/javascript", src="js/")

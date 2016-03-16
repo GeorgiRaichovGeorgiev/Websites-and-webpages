@@ -1,0 +1,199 @@
+@import reset.sass
+
+body
+	border: 2px solid #000
+	font-family: sans-serif
+
+/* header */
+@import Sass/header
+nav li:nth-child(2) > a
+	font-weight: bold
+	color: #333
+
+/* main */
+main
+	padding: 2.5%
+	background-color: #a8a7a4
+	overflow: hidden
+.about-us-wrapper
+	padding-top: 1.5%
+	padding-bottom: 1.5%
+	-webkit-border-radius: 10px
+	-moz-border-radius: 10px
+	border-radius: 10px
+	background: #D8D8D7
+	background: -webkit-linear-gradient(#dfdfde, #cbcbca)
+	background: -moz-linear-gradient(#dfdfde, #cbcbca)
+	background: -o-linear-gradient(#dfdfde, #cbcbca)
+	background: linear-gradient(#dfdfde, #cbcbca)
+	border: 2px solid #000
+	overflow: hidden
+	h1
+		margin-bottom: 80px
+		text-align: center
+		font-size: 60px
+		font-style: italic
+		font-family: serif
+		font-weight: bold
+.border-bottom
+	border-bottom: 3px solid #000
+.content
+	width: 70%
+	padding: 2.5% 15% 5% 5%
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	border-right: 2px solid #000
+	float: left
+	p
+		margin-bottom: 30px
+		font-size: 25px
+		line-height: 30px
+	.owner
+		overflow: hidden
+		p
+			float: left
+		img
+			width: 65%
+			height: auto
+			float: right
+aside
+	width: 30%
+	height: 100%
+	padding: 2.5% 5% 0 2%
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	float: left
+	h2
+		margin-bottom: 20px
+		font-size: 40px
+		text-align: center
+blockquote
+	margin-bottom: 50px
+	padding: 5%
+	background-color: #FFF
+	font-size: 25px
+	line-height: 30px
+	-webkit-border-radius: 13px
+	-moz-border-radius: 13px
+	border-radius: 13px
+	position: relative
+	&:last-child
+		margin-bottom: 34px
+	strong
+		color: #661212
+	cite
+		margin-top: 15px
+		font-style: normal
+		text-align: right
+		display: block
+.arrow-down
+	width: 59px
+	height: 34px
+	background-image: url(../img/arrow-down.png)
+	position: absolute
+	bottom: -33px
+	left: 40%
+
+/* footer */
+@import Sass/footer
+
+/* Media Queries */
+@media (max-width: 1350px)
+	.content
+		padding-right: 10%
+@media (max-width: 1175px)
+	.content
+		width: 68%
+		padding-right: 9%
+		.owner img
+			width: 60%
+	aside
+		width: 32%
+		padding-left: 3%
+@media (max-width: 1030px)
+	.about-us-wrapper h1
+		font-size: 55px
+	.content p
+		font-size: 23px
+		line-height: 28px
+	blockquote
+		font-size: 23px
+		line-height: 28px
+@media (max-width: 980px)
+	main
+		padding: 5%
+	.about-us-wrapper
+		padding: 2.5% 6% 6%
+		h1
+			margin-bottom: 60px
+	.content
+		width: auto
+		padding: 0
+		border-right: 0
+		float: none
+		p
+			margin-bottom: 45px
+	aside
+		width: auto
+		margin-top: 50px
+		padding: 5% 10%
+		border-top: 10px solid #000
+		border-bottom: 10px solid #000
+		-webkit-border-radius: 10%
+		-moz-border-radius: 10%
+		border-radius: 10%
+		float: none
+	blockquote
+		padding: 2% 3%
+		margin-bottom: 65px
+		&:last-child
+			margin-bottom: 34px
+@media (max-width: 700px)
+	.about-us-wrapper
+		padding: 6% 10% 15%
+		h1
+			margin-bottom: 40px
+			font-size: 40px
+			span
+				border-bottom-width: 2px
+	.content
+		p
+			margin-bottom: 35px
+			font-size: 21px
+			line-height: 28px
+		.owner
+			p
+				float: none
+			img
+				width: 100%
+				float: none
+	aside
+		padding-top: 8%
+		padding-bottom: 8%
+		margin-top: 60px
+		h2
+			font-size: 27px
+	blockquote
+		padding: 4%
+		font-size: 21px
+		line-height: 28px
+@media (max-width: 480px)
+	main
+		padding: 0
+	.about-us-wrapper
+		padding-top: 50px
+		border: 0
+		-webkit-border-radius: 0
+		-moz-border-radius: 0
+		border-radius: 0
+		h1
+			margin-bottom: 65px
+			font-size: 35px
+	.content
+		p
+			margin-bottom: 45px
+			font-size: 20px
+			line-height: 25px
+			text-align: center
