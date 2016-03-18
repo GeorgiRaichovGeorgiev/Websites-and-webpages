@@ -67,7 +67,7 @@ body
 					li
 						float: left
 		#main-content-wrapper
-			margin-top: 5px
+			margin-top: 25px
 			margin-bottom: 25px
 			text-align: center
 			#main-content
@@ -87,10 +87,10 @@ body
 					-webkit-box-sizing: border-box
 					-moz-box-sizing: border-box
 					vertical-align: middle
-					transition: opacity 0.4s
 					-webkit-transition: opacity 0.4s
 					-moz-transition: opacity 0.4s
 					-o-transition: opacity 0.4s
+					transition: opacity 0.4s
 					&:hover
 						/* IE 8 */
 						-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"
@@ -107,6 +107,8 @@ body
 							-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"
 							/* IE 5-7 */
 							filter: alpha(opacity=70)
+						.new
+							background-color: #0d8400
 					&:nth-child(5n)
 						margin-right: 0
 					img
@@ -118,15 +120,19 @@ body
 					header
 						height: 65px
 						overflow: hidden
+						.header-container
+							width: 100%
+							height: 65px
+							display: table
+							table-layout: fixed
+							overflow: hidden
 						h2
 							font-size: 18px
 							font-weight: bold
-							padding: 10px 10px 0px 10px
+							padding: 10px
 							word-wrap: break-word
-						.short-header
-							padding-top: 25px
-						.middle-header
-							padding-top: 16px
+							display: table-cell
+							vertical-align: middle
 						header h2
 							padding-top: 25px
 					.duration
@@ -157,9 +163,38 @@ body
 						-khtml-opacity: 0
 						/* Good browsers */
 						opacity: 0
+						z-index: 10
+					.new
+						width: 100%
+						padding-top: 3px
+						padding-bottom: 3px
+						font-size: 18px
+						background-color: #FF0000
+						color: #f2f2f2
+						position: absolute
+						top: -25px
+						left: -1px
+						border: 1px solid #000
+						border-bottom: none
+						-webkit-border-top-left-radius: 5px
+						-moz-border-top-left-radius: 5px
+						border-top-left-radius: 5px
+						-webkit-border-top-right-radius: 5px
+						-moz-border-top-right-radius: 5px
+						border-top-right-radius: 5px
+						font-weight: bold
+						-webkit-transition: background-color 0.2s
+						-moz-transition: background-color 0.2s
+						-o-transition: background-color 0.2s
+						transition: background-color 0.2s
+span.statcounter
+	display: block
+	text-align: center
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+	// IE10+ CSS styles go here
+	body #wrapper #main-content-wrapper #main-content article a
+		background-color: #FFF
 
-
-						background-color: #FFF
 @media (max-width: 1260px) 
 	body
 		#thanks
@@ -241,22 +276,10 @@ body
 							margin-right: 0
 						header
 							height: 50px
+							.header-container
+								height: 50px
 							h2
 								font-size: 19px
-							.short-header
-								padding-top: 16px
-							.middle-header
-								padding-top: 7px
-							.special-775px
-								padding-top: 16px
-							.short-music-775px
-								padding-top: 16px
-							.short-video-bg-header-775px
-								padding-top: 16px
-							.short-movies-bg-header-775px
-								padding-top: 16px
-							.short-music-bg-header-775px
-								padding-top: 16px
 						img
 							width: 230px
 							height: 126px
@@ -278,18 +301,6 @@ body
 				height: 170px
 				&:nth-child(odd)
 					margin-right: 15px
-				header
-					height: 50px
-					.long-595px
-						padding-top: 10px
-					.long-music-775px
-						padding-top: 7px
-					.short-video-bg-header-595px
-						padding-top: 7px
-					.short-movies-bg-header-595px
-						padding-top: 7px
-					.short-music-bg-header-595px
-						padding-top: 7px
 				img
 					width: 210px
 					height: 115px
@@ -310,26 +321,8 @@ body
 							margin-right: 11px
 						header
 							height: 67px
-							.short-header
-								padding-top: 26px
-							.middle-header
-								padding-top: 8px
-							.special-size, .song-special-size
-								padding-top: 7px
-							.short-movies-542px
-								padding-top: 16px
-							.short-video-524px
-								padding-top: 16px
-							.short-music-542px
-								padding-top: 15px
-							.short-long-music-542px
-								padding-top: 5px
-							.short-video-bg-header-542px
-								padding-top: 16px
-							.short-movies-bg-header-542px
-								padding-top: 16px
-							.short-music-bg-header-542px
-								padding-top: 16px
+							.header-container
+								height: 67px
 						img
 							width: 192px
 							height: 105px
@@ -353,7 +346,7 @@ body
 				#languages-and-searching > #search-field
 					margin-right: 40px
 			#main-content-wrapper
-				margin-top: 17px
+				margin-top: 45px
 				#main-content article
 					width: 270px
 					height: 200px
@@ -361,24 +354,8 @@ body
 						margin-right: 0
 					header
 						height: 50px
-						.short-header
-							padding-top: 17px
-						.middle-header
-							padding-top: 8px
-						.song-special-size
-							padding-top: 5px
-						.short-494px
-							padding-top: 17px
-						.short-movies-494px
-							padding-top: 17px
-						.short-long-special-music-494px
-							padding-top: 10px
-						.short-video-bg-header-494px
-							padding-top: 17px
-						.short-movies-bg-header-494px
-							padding-top: 17px
-						.short-music-bg-header-494px
-							padding-top: 17px
+						.header-container
+							height: 50px
 					img
 						width: 268px
 						height: 146px
@@ -402,6 +379,8 @@ body
 				margin-right: 7%
 				width: 80%
 				float: none
+			#main-content-wrapper
+				margin-top: 55px
 			#main-content
 				margin-top: 30px
 

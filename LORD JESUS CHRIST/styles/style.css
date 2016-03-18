@@ -86,7 +86,7 @@ body #wrapper #main-header #main-nav ul li {
 }
 
 body #wrapper #main-content-wrapper {
-  margin-top: 5px;
+  margin-top: 25px;
   margin-bottom: 25px;
   text-align: center;
 }
@@ -107,10 +107,10 @@ body #wrapper #main-content-wrapper #main-content article {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   vertical-align: middle;
-  transition: opacity 0.4s;
   -webkit-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
 body #wrapper #main-content-wrapper #main-content article:hover {
@@ -133,6 +133,10 @@ body #wrapper #main-content-wrapper #main-content article:hover img {
   filter: alpha(opacity=70);
 }
 
+body #wrapper #main-content-wrapper #main-content article:hover .new {
+  background-color: #0d8400;
+}
+
 body #wrapper #main-content-wrapper #main-content article:nth-child(5n) {
   margin-right: 0;
 }
@@ -150,19 +154,21 @@ body #wrapper #main-content-wrapper #main-content article header {
   overflow: hidden;
 }
 
+body #wrapper #main-content-wrapper #main-content article header .header-container {
+  width: 100%;
+  height: 65px;
+  display: table;
+  table-layout: fixed;
+  overflow: hidden;
+}
+
 body #wrapper #main-content-wrapper #main-content article header h2 {
   font-size: 18px;
   font-weight: bold;
-  padding: 10px 10px 0px 10px;
+  padding: 10px;
   word-wrap: break-word;
-}
-
-body #wrapper #main-content-wrapper #main-content article header .short-header {
-  padding-top: 25px;
-}
-
-body #wrapper #main-content-wrapper #main-content article header .middle-header {
-  padding-top: 16px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 body #wrapper #main-content-wrapper #main-content article header header h2 {
@@ -199,7 +205,43 @@ body #wrapper #main-content-wrapper #main-content article a {
   -khtml-opacity: 0;
   /* Good browsers */
   opacity: 0;
-  background-color: #FFF;
+  z-index: 10;
+}
+
+body #wrapper #main-content-wrapper #main-content article .new {
+  width: 100%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 18px;
+  background-color: #FF0000;
+  color: #f2f2f2;
+  position: absolute;
+  top: -25px;
+  left: -1px;
+  border: 1px solid #000;
+  border-bottom: none;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: bold;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+span.statcounter {
+  display: block;
+  text-align: center;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body #wrapper #main-content-wrapper #main-content article a {
+    background-color: #FFF;
+  }
 }
 
 @media (max-width: 1260px) {
@@ -302,29 +344,11 @@ body #wrapper #main-content-wrapper #main-content article a {
   body #wrapper #main-content-wrapper #main-content article header {
     height: 50px;
   }
+  body #wrapper #main-content-wrapper #main-content article header .header-container {
+    height: 50px;
+  }
   body #wrapper #main-content-wrapper #main-content article header h2 {
     font-size: 19px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-header {
-    padding-top: 16px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .middle-header {
-    padding-top: 7px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .special-775px {
-    padding-top: 16px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-music-775px {
-    padding-top: 16px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-video-bg-header-775px {
-    padding-top: 16px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-movies-bg-header-775px {
-    padding-top: 16px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-music-bg-header-775px {
-    padding-top: 16px;
   }
   body #wrapper #main-content-wrapper #main-content article img {
     width: 230px;
@@ -354,24 +378,6 @@ body #wrapper #main-content-wrapper #main-content article a {
   body #wrapper #main-content-wrapper #main-content article:nth-child(odd) {
     margin-right: 15px;
   }
-  body #wrapper #main-content-wrapper #main-content article header {
-    height: 50px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .long-595px {
-    padding-top: 10px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .long-music-775px {
-    padding-top: 7px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-video-bg-header-595px {
-    padding-top: 7px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-movies-bg-header-595px {
-    padding-top: 7px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-music-bg-header-595px {
-    padding-top: 7px;
-  }
   body #wrapper #main-content-wrapper #main-content article img {
     width: 210px;
     height: 115px;
@@ -397,35 +403,8 @@ body #wrapper #main-content-wrapper #main-content article a {
   body #wrapper #main-content-wrapper #main-content article header {
     height: 67px;
   }
-  body #wrapper #main-content-wrapper #main-content article header .short-header {
-    padding-top: 26px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .middle-header {
-    padding-top: 8px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .special-size, body #wrapper #main-content-wrapper #main-content article header .song-special-size {
-    padding-top: 7px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-movies-542px {
-    padding-top: 16px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-video-524px {
-    padding-top: 16px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-music-542px {
-    padding-top: 15px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-long-music-542px {
-    padding-top: 5px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-video-bg-header-542px {
-    padding-top: 16px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-movies-bg-header-542px {
-    padding-top: 16px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-music-bg-header-542px {
-    padding-top: 16px;
+  body #wrapper #main-content-wrapper #main-content article header .header-container {
+    height: 67px;
   }
   body #wrapper #main-content-wrapper #main-content article img {
     width: 192px;
@@ -458,7 +437,7 @@ body #wrapper #main-content-wrapper #main-content article a {
     margin-right: 40px;
   }
   body #wrapper #main-content-wrapper {
-    margin-top: 17px;
+    margin-top: 45px;
   }
   body #wrapper #main-content-wrapper #main-content article {
     width: 270px;
@@ -470,32 +449,8 @@ body #wrapper #main-content-wrapper #main-content article a {
   body #wrapper #main-content-wrapper #main-content article header {
     height: 50px;
   }
-  body #wrapper #main-content-wrapper #main-content article header .short-header {
-    padding-top: 17px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .middle-header {
-    padding-top: 8px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .song-special-size {
-    padding-top: 5px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-494px {
-    padding-top: 17px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-movies-494px {
-    padding-top: 17px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-long-special-music-494px {
-    padding-top: 10px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-video-bg-header-494px {
-    padding-top: 17px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-movies-bg-header-494px {
-    padding-top: 17px;
-  }
-  body #wrapper #main-content-wrapper #main-content article header .short-music-bg-header-494px {
-    padding-top: 17px;
+  body #wrapper #main-content-wrapper #main-content article header .header-container {
+    height: 50px;
   }
   body #wrapper #main-content-wrapper #main-content article img {
     width: 268px;
@@ -528,6 +483,9 @@ body #wrapper #main-content-wrapper #main-content article a {
     margin-right: 7%;
     width: 80%;
     float: none;
+  }
+  body #wrapper #main-content-wrapper {
+    margin-top: 55px;
   }
   body #wrapper #main-content {
     margin-top: 30px;

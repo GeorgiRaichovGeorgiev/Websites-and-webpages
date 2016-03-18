@@ -15,7 +15,6 @@ $(function(){
 
 	$('#search-image').click(function(){
 		searchFieldWidth = searchField.width() - 40;
-		console.log(searchFieldWidth);
 		width = parseInt(searchInput.css('width'));
 		if (width < 6) {
 			searchInput.animate({'width': searchFieldWidth}, 300).focus();
@@ -24,7 +23,6 @@ $(function(){
 		}
 	});
 
-	
 
 	searchInput.keyup(function(){
 		searchValue = $(this).val();
@@ -47,4 +45,12 @@ $(function(){
 			isThereFindedResults.removeClass('no-results');
 		}
 	});
+
+
+	$("article").has(".new").css({
+		"border-top-left-radius": 0,
+		"border-top-right-radius": 0
+	}).find("a").css("top", "-25px");
+
+	// $("article").has(".new").find("a").css("top", "-25px");
 });
